@@ -1,6 +1,6 @@
 <html manifest="offlinexmb.cache">
 <head>
-<title>Prb 7.55 Exploit Menu V3 Update 2 Blue</title>
+<title>Prb 7.55 Exploit Menu V3 Update 3 Blue</title>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%"};
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="Turn Off the Internet & Reopen to Run the Webkit!!";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
@@ -60,14 +60,15 @@ PS4 Firmware <span id="PS4fw"></span></div>
 <a href="#" class="button pointer" onMouseOver="msgs.innerHTML='Fan Control Set Temp 65c'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_fancontrol65(); return false" style="font-size:15px;text-align:center;color:#ff4c4c">65c</a>&nbsp;
 <a href="#" class="button pointer" onMouseOver="msgs.innerHTML='Fan Control Set Temp 70c'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_fancontrol70(); return false" style="font-size:15px;text-align:center;color:#ff4c4c">70c</a>&nbsp;
 <br><br><div style=font-size:16px>EXPLOIT / HEN / MIRA</div>
-<button onMouseOver="msgs.innerHTML='New Exploit - By Sleirsgoevy 27th May'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit1(); return false">New Exploit</button>&nbsp; OR &nbsp;
-<button onMouseOver="msgs.innerHTML='Exploit - By Sleirsgoevy 20th May'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit2(); return false">Exploit</button>&nbsp; OR &nbsp;
-<button onMouseOver="msgs.innerHTML='Old Exploit - By Sleirsgoevy 2nd May'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit3(); return false">Old Exploit</button>&nbsp; -> &nbsp;
+<button onMouseOver="msgs.innerHTML='New Exploit - By Sleirsgoevy 3rd June'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit1(); return false">New Exploit</button>&nbsp; OR &nbsp;
+<button onMouseOver="msgs.innerHTML='Exploit - By Sleirsgoevy 27th May'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit2(); return false">Exploit</button>&nbsp; OR &nbsp;
+<button onMouseOver="msgs.innerHTML='Old Exploit - By Sleirsgoevy 20th May'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_exploit3(); return false">Old Exploit</button>&nbsp; -> &nbsp;
 <button onMouseOver="msgs.innerHTML='GoldHen v1.0 - By SiSTRo / 7.55 By Joonie86'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_goldhen(); return false">GoldHen V1.0</button>
 <button onMouseOver="msgs.innerHTML='GoldHen v1.1 - By SiSTRo / 7.55 By Joonie86'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_goldhenb(); return false">GoldHen V1.1</button>
 <button onMouseOver="msgs.innerHTML='HenB v2.1.3 - By SiSTRo'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_hen(); return false">HenB V2.1.3</button>
 <button onMouseOver="msgs.innerHTML='Mira2B + Spoof V9.99'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_mira(); return false">Mira2B</button>
 <br><br><div style=font-size:16px>PAYLOADS</div>
+<button onMouseOver="msgs.innerHTML='Orbis Toolbox - 1061 Alpha / By OSM-Made.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_orbistoolbox(); return false">OrbisToolbox</button>
 <button onMouseOver="msgs.innerHTML='Binloader'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_binloader(); return false">Binloader</button>
 <button onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_disableupdates(); return false">Disable-Updates</button>
 <button onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V3 Update'" onclick="load_enableupdates(); return false">Enable-Updates</button>
@@ -153,6 +154,13 @@ function load_mira(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Mira2b ...</h1>";
 LoadedMSG="Mira2b Loaded";
 PLfile = "pl_mira2b.bin"
+loadScript2();
+}
+
+function load_orbistoolbox(){
+msgs.innerHTML="Loading OrbisToolBox ...";
+LoadedMSG="OrbisToolBox Loaded";
+PLfile = "pl_OrbisToolbox.bin";
 loadScript2();
 }
 
